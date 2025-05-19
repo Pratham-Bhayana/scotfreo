@@ -1,0 +1,1 @@
+import{r as n}from"./index-6lgftr4o.js";function I(e,r={threshold:0}){const[c,o]=n.useState(!1);return n.useEffect(()=>{const t=e.current;if(!t)return;const s=new IntersectionObserver(([i])=>{o(i.isIntersecting)},r);return s.observe(t),()=>{s.disconnect()}},[e,r]),c}export{I as u};
